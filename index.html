@@ -1,11 +1,98 @@
-<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narendra</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Narendra Chowdary - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb',
+            secondary: '#9333ea',
+          },
+        },
+      },
+    }
+  </script>
 </head>
-<body>
-    <h1>Narendra Chowdary</h1>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition duration-300">
+
+  <header class="flex justify-between items-center p-6 max-w-6xl mx-auto">
+    <h1 class="text-2xl font-bold">Narendra Chowdary</h1>
+    <div class="flex items-center gap-4">
+      <a href="https://github.com/" target="_blank" class="hover:text-primary">GitHub</a>
+      <a href="https://linkedin.com/" target="_blank" class="hover:text-primary">LinkedIn</a>
+      <button onclick="document.documentElement.classList.toggle('dark')" class="bg-gray-200 dark:bg-gray-700 p-2 rounded">🌓</button>
+    </div>
+  </header>
+
+  <section class="text-center py-16 px-4 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c');">
+    <div class="bg-black bg-opacity-60 p-6 rounded-lg">
+      <h2 class="text-4xl font-bold mb-4 text-white">Full Stack Web Developer</h2>
+      <p class="max-w-xl mx-auto text-lg text-gray-200">
+        Building engaging web experiences with modern tools like React, JavaScript, and Tailwind CSS. Passionate about frontend performance and clean code.
+      </p>
+      <div class="mt-6 flex justify-center gap-4">
+        <a href="#projects" class="bg-primary text-white px-6 py-2 rounded hover:bg-blue-700">View Work</a>
+        <a href="#contact" class="border border-white px-6 py-2 rounded text-white hover:bg-primary hover:text-white">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+    <p>I’m a detail-oriented developer with a post-graduation in Web Development from North Island College and 2+ years of professional experience in web and IT support roles. My skills range from HTML, CSS, JS, and PHP to backend work and DevOps tools.</p>
+  </section>
+
+  <section id="skills" class="bg-gray-100 dark:bg-gray-800 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-6 text-center">Skills & Tools</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
+        <span class="bg-white dark:bg-gray-700 py-3 px-4 rounded shadow">HTML</span>
+        <span class="bg-white dark:bg-gray-700 py-3 px-4 rounded shadow">CSS</span>
+        <span class="bg-white dark:bg-gray-700 py-3 px-4 rounded shadow">JavaScript</span>
+        <span class="bg-white dark:bg-gray-700 py-3 px-4 rounded shadow">React</span>
+        <span class="bg-white dark:bg-gray-700 py-3 px-4 rounded shadow">PHP</span>
+        <span class="bg-white dark:bg-gray-700 py-3 px-4 rounded shadow">Adobe Suite</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-6">Featured Projects</h2>
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div class="p-4 border dark:border-gray-700 rounded shadow">
+        <h3 class="text-xl font-bold">Driver Connect</h3>
+        <p class="mt-2 text-sm">Live traffic updates and spare part store locator powered by TomTom API.</p>
+      </div>
+      <div class="p-4 border dark:border-gray-700 rounded shadow">
+        <h3 class="text-xl font-bold">Customer Service Tracker</h3>
+        <p class="mt-2 text-sm">Internal dashboard for tracking support tickets and user issues efficiently.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 px-6 bg-gray-100 dark:bg-gray-800">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
+      <p>Reach out if you’d like to collaborate or learn more about my work.</p>
+      <form class="mt-6 flex flex-col gap-4">
+        <input type="text" placeholder="Name" class="p-3 rounded border dark:border-gray-600 bg-white dark:bg-gray-900">
+        <input type="email" placeholder="Email" class="p-3 rounded border dark:border-gray-600 bg-white dark:bg-gray-900">
+        <textarea rows="4" placeholder="Message" class="p-3 rounded border dark:border-gray-600 bg-white dark:bg-gray-900"></textarea>
+        <button type="submit" class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 bg-gray-200 dark:bg-gray-900 text-gray-600 dark:text-gray-400">
+    <p>&copy; 2024 Narendra Chowdary. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
