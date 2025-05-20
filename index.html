@@ -198,13 +198,13 @@
     <p>&copy; 2024 Narendra Chowdary. All rights reserved.</p>
   </footer>
 
-</body>
-<script>
+
+  <script>
     function handleSubmit(event) {
       event.preventDefault();
       const form = event.target;
       const thankYou = document.getElementById('thank-you');
-    
+
       fetch(form.action, {
         method: 'POST',
         body: new FormData(form),
@@ -221,5 +221,11 @@
       });
       return false;
     }
-    </script>
+  </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+</body>
+
 </html>
