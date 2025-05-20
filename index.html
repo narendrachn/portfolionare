@@ -180,14 +180,14 @@
     <div class="max-w-2xl mx-auto">
       <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
       <p>Reach out if you’d like to collaborate or learn more about my work.</p>
-      <form id="contact-form"
-      action="https://formspree.io/f/manokbgp"
-      method="POST"
-      class="mt-6 flex flex-col gap-4"
-      onsubmit="return handleSubmit(event)">
-        <input type="text" placeholder="Name" class="p-3 rounded border dark:border-gray-600 bg-white dark:bg-gray-900">
-        <input type="email" placeholder="Email" class="p-3 rounded border dark:border-gray-600 bg-white dark:bg-gray-900">
-        <textarea rows="4" placeholder="Message" class="p-3 rounded border dark:border-gray-600 bg-white dark:bg-gray-900"></textarea>
+      <form id="contact-form" action="https://formspree.io/f/manokbgp" method="POST" class="mt-6 flex flex-col gap-4"
+        onsubmit="return handleSubmit(event)">
+        <input type="text" placeholder="Name" name="name"
+          class="p-3 rounded border dark:border-gray-600 bg-white dark:bg-gray-900">
+        <input type="email" placeholder="Email" name="Email"
+          class="p-3 rounded border dark:border-gray-600 bg-white dark:bg-gray-900">
+        <textarea rows="4" placeholder="Message" name="message"
+          class="p-3 rounded border dark:border-gray-600 bg-white dark:bg-gray-900"></textarea>
         <button type="submit" class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700">Send Message</button>
         <p id="thank-you" class="hidden text-green-500 mt-2">Thanks! Your message has been sent.</p>
       </form>
