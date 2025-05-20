@@ -85,8 +85,44 @@
     <h2 class="text-3xl font-semibold mb-6">Featured Projects</h2>
     <div class="grid sm:grid-cols-2 gap-6">
       <div class="p-4 border dark:border-gray-700 rounded shadow">
-        <h3 class="text-xl font-bold">Driver Connect</h3>
-        <p class="mt-2 text-sm">Live traffic updates and spare part store locator powered by TomTom API.</p>
+        
+        <!-- Project Card -->
+        <div class="p-4 border dark:border-gray-700 rounded shadow bg-white dark:bg-gray-900">
+          <!-- Lightbox Image -->
+          <a href="images/driver-connect-large.png" data-lightbox="driver-connect" data-title="Driver Connect">
+            <img src="images/driver-connect-thumbnail.png" alt="Driver Connect Screenshot"
+              class="w-full h-48 object-cover rounded mb-4 transition-transform duration-300 hover:scale-105">
+          </a>
+
+          <!-- Project Title -->
+          <h3 class="text-xl font-bold">Driver Connect</h3>
+
+          <!-- Description -->
+          <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
+            Live traffic updates and spare part store locator powered by TomTom API.
+          </p>
+
+          <!-- Tech Stack -->
+          <div class="flex flex-wrap gap-2 mt-3">
+            <span
+              class="text-xs bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded">HTML</span>
+            <span
+              class="text-xs bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200 px-2 py-1 rounded">JavaScript</span>
+            <span
+              class="text-xs bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 px-2 py-1 rounded">TomTom
+              API</span>
+            <span
+              class="text-xs bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200 px-2 py-1 rounded">CSS</span>
+          </div>
+
+          <!-- Links -->
+          <div class="mt-4 flex items-center gap-4">
+            <a href="https://your-live-project-link.com" target="_blank" rel="noopener noreferrer"
+              class="text-blue-600 hover:underline text-sm">🌐 View Project</a>
+            <a href="https://github.com/yourusername/driver-connect" target="_blank" rel="noopener noreferrer"
+              class="text-gray-600 hover:underline text-sm">📂 GitHub</a>
+          </div>
+        </div>
       </div>
       <div class="p-4 border dark:border-gray-700 rounded shadow">
         <h3 class="text-xl font-bold">Customer Service Tracker</h3>
